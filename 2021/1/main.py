@@ -1,8 +1,8 @@
 with open("input.txt") as f:
     cnt = 0
-    lines = f.readlines()
+    lines = f.read().splitlines()
     for idx, line in enumerate(lines):
-        line = int(line.replace('\n', ''))
+        line = int(line)
         if idx == 0:
             prev = line
         else:
