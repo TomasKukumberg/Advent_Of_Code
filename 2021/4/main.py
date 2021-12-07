@@ -11,11 +11,13 @@ def userWon(boards, dict):
                 return True, idx
     return False, 0
 
+
 def markNumber(boards, number, dict):
     for idx, board in enumerate(boards):
         for jdx, num in enumerate(board):
             if num == number:
                 dict.add((idx, jdx))
+
 
 def flatten(arr):
     result = []
@@ -26,10 +28,12 @@ def flatten(arr):
         result.append(tmp)
     return result
 
+
 def arrToInt(arr):
     for idx, board in enumerate(arr):
         for jdx, num in enumerate(board):
             arr[idx][jdx] = int(arr[idx][jdx])
+
 
 def getFinalResult(boards, i, dict, number):
     sum = 0
@@ -38,9 +42,9 @@ def getFinalResult(boards, i, dict, number):
             if (idx, jdx) not in dict and idx == i:
                 sum += num
     return sum * number
-            
-with open("input.txt") as f:
 
+
+with open("input.txt") as f:
     lines = f.read().splitlines()
     numbers = lines[0].split(',')
     numbers = [int(x) for x in numbers]
