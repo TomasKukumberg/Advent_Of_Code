@@ -1,17 +1,17 @@
-def tst(numbers):
-    result = numbers.copy()
+def simulateDay(fish):
+    result = fish.copy()
 
-    for idx, number in enumerate(numbers):
+    for idx, number in enumerate(fish):
         result[idx] = 6 if number == 0 else number - 1
         if number == 0:
             result.append(8)
     return result
 
 with open('input.txt') as f:
-    numbers = f.read().split(',')
-    numbers = [ int(x) for x in numbers ]
+    fish = f.read().split(',')
+    fish = [ int(x) for x in fish ]
     
 for i in range(80):
-    numbers = tst(numbers)
+    fish = simulateDay(fish)
 
-print(len(numbers))
+print(f'Fish count: {len(fish)}' )
