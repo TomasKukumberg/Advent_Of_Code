@@ -14,4 +14,4 @@ with open('input.txt') as f:
 for i in range(80):
     fish = simulateDay(fish)
 
-print(f'Fish count: {len(fish)}' )
+print(f'Fish count: {len(fish)}')
