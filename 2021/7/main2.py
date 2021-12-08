@@ -11,9 +11,9 @@ with open('input.txt') as f:
     numbers = [int(x) for x in f.read().split(',')]
 
 moveTo, min = -1, inf
-max_num = max(numbers)
+maxNum = max(numbers)
 
-for i in range(max_num):
+for i in range(maxNum):
     tmp1, tmp2 = getFuelConsumption(numbers, i)
     if tmp2 < min:
         moveTo, min = tmp1, tmp2
