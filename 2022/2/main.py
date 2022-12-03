@@ -10,12 +10,8 @@ def get_rounds(path):
         return f.readlines()
 
 def get_choice_score(player):
-    if player == PLAYER_ROCK:
-        return 1
-    elif player == PLAYER_PAPER:
-        return 2
-    else:
-        return 3
+    choice_score = {PLAYER_ROCK : 1, PLAYER_PAPER : 2, PLAYER_SCISSORS : 3}
+    return choice_score[player]
 
 def get_result_score(enemy, player):
     wins = {ENEMY_ROCK : PLAYER_PAPER, ENEMY_PAPER : PLAYER_SCISSORS, ENEMY_SCISSORS : PLAYER_ROCK}
