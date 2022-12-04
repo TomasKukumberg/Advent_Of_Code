@@ -7,9 +7,7 @@ def sum_max_calories(max_calories):
     return sum_max 
 
 def get_max_calories(calories):
-    max_calories_1 = -math.inf
-    max_calories_2 = -math.inf
-    max_calories_3 = -math.inf
+    max_calories_1, max_calories_2, max_calories_3 = -math.inf, -math.inf, -math.inf
     for calorie in calories:
         if calorie > max_calories_1:
             max_calories_3 = max_calories_2
