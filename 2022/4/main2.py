@@ -14,7 +14,7 @@ def do_pairs_overlap(pairs):
     second_pair_min, second_pair_max = get_min_max(pairs[1])
     first_list = set(range(first_pair_min, first_pair_max + 1))
     second_list = set(range(second_pair_min, second_pair_max + 1))
-    pairs_overlap = (first_list.intersection(second_list) != set()) or (second_list.intersection(first_list) != set())
+    pairs_overlap = first_list.intersection(second_list) != set()
     return pairs_overlap
 
 lst = get_list('input.txt')
