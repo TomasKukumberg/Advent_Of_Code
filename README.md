@@ -18,7 +18,7 @@ More info at https://adventofcode.com.
 | 6.    | :heavy_check_mark: | :star: :star: |
 | 7.    | :heavy_check_mark: | :star: :star: |
 | 8.    | :heavy_check_mark: | :star: :star: |
-| 9.    |                    |               |
+| 9.    | :heavy_check_mark: | :star:        |
 | 10.   |                    |               |
 | 11.   |                    |               |
 | 12.   |                    |               |
