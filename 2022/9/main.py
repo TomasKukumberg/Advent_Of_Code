@@ -74,17 +74,19 @@ def move(turn, positions):
             move_tail(positions)
             save_tail_position(positions)
 
-    
-lines = get_lines('input.txt')
-turns = get_turns(lines)
+def main():
+    lines = get_lines('input.txt')
+    turns = get_turns(lines)
 
-positions = {
-    "head" : [0, 0],
-    "tail" : [0, 0],
-    "visited" : set((0, 0))
-}
+    positions = {
+        "head" : [0, 0],
+        "tail" : [0, 0],
+        "visited" : set((0, 0))
+    }
 
-for turn in turns:
-    move(turn, positions)
+    for turn in turns:
+        move(turn, positions)
 
-print(f'Total visited positions of tail: {len(positions["visited"])}')
+    print(f'Total visited positions of tail: {len(positions["visited"])}')
+
+main()
