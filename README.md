@@ -20,7 +20,7 @@ More info at https://adventofcode.com.
 | 8.    | :heavy_check_mark: | :star: :star: |
 | 9.    | :heavy_check_mark: | :star:        |
 | 10.   | :heavy_check_mark: | :star: :star: |
-| 11.   |                    |               |
+| 11.   | :heavy_check_mark: | :star:        |
 | 12.   |                    |               |
 
 ### 2021
